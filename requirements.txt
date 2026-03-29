@@ -1,5 +1,6 @@
 streamlit
 groq
+langchain
 langchain-community
 duckduckgo-search
 wikipedia
