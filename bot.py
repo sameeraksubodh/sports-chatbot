@@ -18,7 +18,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("🏆 Ultimate Sports Bot")
+st.title(" Sports Pro Bot")
 st.markdown("---")
 
 # --- 3. SIDEBAR CONTROLS ---
