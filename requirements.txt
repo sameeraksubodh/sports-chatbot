@@ -1,6 +1,0 @@
-streamlit
-groq
-langchain-community
-duckduckgo-search
-wikipedia
-
