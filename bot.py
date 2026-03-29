@@ -40,10 +40,23 @@ if "messages" not in st.session_state:
 
 # --- 5. STRICT AI SPORTS GATEKEEPER ---
 def is_sports_strictly(query):
+    sports_keywords = [
+        "sport", "match", "team", "player", "score", "goal",
+        "cricket", "football", "soccer", "nba", "fifa",
+        "world cup", "tennis", "olympics", "athlete"
+    ]
+    
+    query_lower = query.lower()
+    
+   
+    if any(word in query_lower for word in sports_keywords):
+        return True
+    
+  
     try:
         check = client.chat.completions.create(
             messages=[
-                {"role": "system", "content": "You are a gatekeeper. Your only job is to decide if a message is about sports, athletes, teams, or sports history. Answer ONLY 'TRUE' or 'FALSE'."},
+                {"role": "system", "content": "Answer ONLY TRUE or FALSE. Is this about sports?"},
                 {"role": "user", "content": query}
             ],
             model="llama-3.1-8b-instant",
