@@ -32,8 +32,7 @@ with st.sidebar:
 
 # --- 4. INITIALIZE TOOLS & AI ---
 client = Groq(api_key=GROQ_API_KEY)
-wrapper = DuckDuckGoSearchAPIWrapper()
-search_tool = DuckDuckGoSearchRun(api_wrapper=wrapper)
+search_tool = DuckDuckGoSearchRun()
 wiki_wrapper = WikipediaAPIWrapper()
 
 if "messages" not in st.session_state:
