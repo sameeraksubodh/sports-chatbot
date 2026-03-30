@@ -9,17 +9,6 @@ GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 
 st.set_page_config(page_title="Sports Pro Bot", page_icon="🏆", layout="centered")
 
-# --- 2. CUSTOM CSS STYLING ---
-st.markdown("""
-    <style>
-    .stApp { background-color: #f0f2f6; }
-    .stChatMessage { border-radius: 15px; margin-bottom: 10px; border: 1px solid #ddd; }
-    .stChatInput { border-radius: 10px; }
-    </style>
-    """, unsafe_allow_html=True)
-
-st.title(" Sports Pro Bot")
-st.markdown("---")
 
 # --- 3. SIDEBAR CONTROLS ---
 with st.sidebar:
