@@ -10,6 +10,12 @@ GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 st.set_page_config(page_title="Sports Pro Bot", page_icon="🏆", layout="centered")
 
 
+# --- 2. CUSTOM CSS STYLING ---
+
+st.title(" Sports Pro Bot")
+st.markdown("---")
+
+
 # --- 3. SIDEBAR CONTROLS ---
 with st.sidebar:
     st.header("Settings ⚙️")
